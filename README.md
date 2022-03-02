@@ -36,19 +36,48 @@ base, altura = altura, base
 * potencia
 
 ### Suma
-num1=6
-num2=10
-sum1=num1+num2
-print(sum1)
+```python
+* num1=6
+* num2=10
+* sum1=num1+num2
+* print(sum1)
+```
 ### Resta
+* num1=10
+* num2=7
+* resta=num1-num2
+* print(num1,'-',num2,'=',resta)
 
 ### Multiplicación
+* num1=10
+* num2=7
+- mult=num1*num2
+* print(num1,'*',num2,'=',mult)
 
 ### División
+* num1=10
+* num2=7
+* divi=num1/num2
+* print(num1,'/',num2,'=',divi)
 
 ### Módulo
+* num1=10
+* num2=7
+* modulo=num1%num2
+* print(num1,'%',num2,'=',modulo)
 
 # Tipos de datos en Python
+Los tipos de datos serían:
+* Numeros enteros
+* Numeros de punto flotante
+*  Texto (cadenas de caracteres)
+*  Booleanos (Verdadero y falso)
+
+## Casting en Python
+* El casting es la tecnica que sirve para convertir un dato de un tipo a un tipo de dato diferente
+  * t a str: str(45)
+  * r a int: int ("123")
+  * float a int: int (3.5)
 
 ## Integer
 
@@ -56,7 +85,7 @@ print(sum1)
 
 ## String
 
-## Casting en Python
+
 
 ## List
 

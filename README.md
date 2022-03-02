@@ -127,15 +127,77 @@ Una tupla es una colección de objetos de Python separados por comas. De alguna 
 ```
 
 ## Dictionary
-
+Palabras reservadas
+```python
+ and assert break class continue def del elif
+else except exec finally for from global if
+import in input is lambda next not or pass
+print raise return try while yield 
+```
 # Tomando decisiones
+* Las palabras vlave if,elif,else permieten dirigir el camino por el que va a avanzar el programa dependiendo de una o varias condiciones
+- Luego de los dos puntos(:), dejamos 4 espacios de sangria en la siguiente linea o una tabulación
 
 ## Sentencia if
+```python
+#Escribir un programa que solicite un valor entero al usuario
+#determine si es par o impar
+num=int(input("ingrese numero:"))
+
+
+if (num%2==0):
+    print("El numero es par",)
+    print(num,"es par")
+else:
+    print("El numero es impar")  
+```
+
 
 ## Ciclo For
+```python
+# Calcular la suma y la media aritmetica de Nnumeros reales. 
+# solicitar el valor de n al usuario y cada uno de los N números reales.
+
+n = int(input("Ingrese los números que desee: "))
+suma= 0
+for i in range(n):
+    nota =int(input('Ingrese el número' + str (i+1) +  ':'))
+    suma += nota
+    
+promedio = suma/n 
+print("promedio:", promedio)
+```
 
 ## Ciclo While
+```python
+#10-20
+
+num=11
+
+while num<10 or num >20 or num%2!=0:
+    num=int(input("ingrese numero:"))
+
+print("se fue")
+```
 
 ## Break
+```python
+j=0
+for i in range (10):
+    j+=2
+    print ("i;",i,"j:",j)
+    if j==10:
+        break
+```
 
 ## Continue
+```python
+contador=0
+for i in range (10):
+    for j in range (10):
+        contador +=1
+        print ("i:",i,"j:",j)
+        if contador >50:
+            continue
+print ("contador:",contador)
+```

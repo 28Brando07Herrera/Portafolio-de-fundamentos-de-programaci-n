@@ -12,6 +12,19 @@ El operador de asignación en Python es el “=“
 De derecha a izquierda                                       De izquierda a derecha
 "correcto"                                                   "incorrecto"
 ## Asignando valores a una variable
+Asignación en la misma línea:
+x = 5; y = 9; z = 12
+• Asignación múltiple:
+day, month, year = “miércoles”
+,
+”mayo”
+, 2016
+• Asignación del mismo valor:
+largo = ancho = 4
+• Asignación de intercambio:
+base = 15; altura = 30
+base, altura = altura, base
+
 
 ## Operadores básicos
 

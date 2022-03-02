@@ -27,9 +27,19 @@ base, altura = altura, base
 
 
 ## Operadores básicos
++ suma
+- resta
+* multiplicacion
+* division
+* division euclidiana (cociente)
+* módulo
+* potencia
 
 ### Suma
-
+num1=6
+num2=10
+sum1=num1+num2
+print(sum1)
 ### Resta
 
 ### Multiplicación

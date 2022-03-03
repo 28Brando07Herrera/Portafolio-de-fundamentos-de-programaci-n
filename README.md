@@ -8,71 +8,135 @@ Una variable se declara para indicarle al programa a partir de qué lugar empiez
 ## Nombrando una variable
 La creación de variables se realiza a través de la asignación de un valor a la misma.
 El operador de asignación en Python es el “=“
-'''x = 100                                                      100=x'''
-De derecha a izquierda                                       De izquierda a derecha
-"correcto"                                                   "incorrecto"
+* x = 100                                                      
+De derecha a izquierda                                      
+"correcto"  
+* 100 = x                                                      
+De izquierda a derecha                                      
+"incorrecto" 
+
 ## Asignando valores a una variable
-Asignación en la misma línea:
-x = 5; y = 9; z = 12
-• Asignación múltiple:
-day, month, year = “miércoles”
-,
-”mayo”
-, 2016
-• Asignación del mismo valor:
-largo = ancho = 4
-• Asignación de intercambio:
-base = 15; altura = 30
-base, altura = altura, base
+* Asignación en la misma línea:
+  * x = 5; y = 9; z = 12
+* Asignación múltiple:
+  * day, month, year = “miércoles”,”mayo”, 2016
+* Asignación del mismo valor:
+  * largo = ancho = 4
+* Asignación de intercambio:
+  * base = 15; altura = 30
+  * base, altura = altura, base
 
 
 ## Operadores básicos
-+ suma
-- resta
-* multiplicacion
-* division
-* division euclidiana (cociente)
-* módulo
-* potencia
+* suma (+)
+* resta (-)
+* multiplicacion (*)
+* division (/)
+* division euclidiana (cociente)(//)
+* módulo (%)
+* potencia (** )
+
+### Ingreso y salida
+input:Esta función permite obtener el texto escrito por el usuario, el cual se asignará a un espacio de memoria con el nombre que el programador vea conveniente.
+```python
+#Entrada
+num=int(input("ingrese un numero:"))
+```
+
+print:sirve para mostrar un mensaje en la pantalla de una aplicación de consola
+```python
+#Salida
+print("El numero es:",num)
+```
+
 
 ### Suma
+La suma se realiza uniendo el valor de 2 o más numeros (+)
 ```python
+#Aqui ya se le asigna valor a las variables
  num1=6
  num2=10
  sum1=num1+num2
- print(sum1)
+ print(num1,'-',num2,'=',sum1)
 ```
-### Resta
+
 ```python
+#Aqui se debe ingresar valor a los numeros por consola
+ num1int(input("ingrese un numero:"))
+ num2=int(input("ingrese un numero:"))
+ sum1=num1+num2
+ print(num1,'-',num2,'=',sum1)
+```
+
+### Resta
+La resta se realiza quitando valores entre 2 o mas numeros 
+```python
+#Aqui ya se le asigna valor a las variables
 num1=10
 num2=7
 resta=num1-num2
 print(num1,'-',num2,'=',resta)
 ```
 
+```python
+#Aqui se debe ingresar valor a los numeros por consola
+num1int(input("ingrese un numero:"))
+num2=int(input("ingrese un numero:"))
+resta=num1-num2
+print(num1,'-',num2,'=',resta)
+```
+
 ### Multiplicación
 ```python
-* num1=10
-* num2=7
-- mult=num
-* print(num1,'*',num2,'=',mult)
+#Aqui ya se le asigna valor a las variables
+num1=10
+num2=7
+mult=num1*num2
+print(num1,'*',num2,'=',mult)
+```
+
+```python
+#Aqui se debe ingresar valor a los numeros por consola
+num1=int(input("ingrese un numero:"))
+num2=int(input("ingrese un numero:"))
+mult=num1*num2
+print(num1,'*',num2,'=',mult)
 ```
 
 ### División
 ```python
-* num1=10
-* num2=7
-* divi=num1/num2
-* print(num1,'/',num2,'=',divi)
+#Aqui ya se le asigna valor a las variables
+num1=10
+num2=7
+divi=num1/num2
+print(num1,'/',num2,'=',divi)
+```
+
+```python
+#Aqui se debe ingresar valor a los numeros por consola
+num1=int(input("ingrese un numero:"))
+num2=int(input("ingrese un numero:"))
+divi=num1/num2
+print(num1,'/',num2,'=',divi)
 ```
 
 ### Módulo
 ```python
-* num1=10
-* num2=7
-* modulo=num1%num2
-* print(num1,'%',num2,'=',modulo)
+#Aqui ya se le asigna valor a las variables
+num1=10
+num2=7
+modulo=num1%num2
+print(num1,'%',num2,'=',modulo)
 ```
+
+```python
+#Aqui se debe ingresar valor a los numeros por consola
+num1=int(input("ingrese un numero:"))
+num2=int(input("ingrese un numero:"))
+modulo=num1%num2
+print(num1,'%',num2,'=',modulo)
+```
+
 
 # Tipos de datos en Python
 Los tipos de datos serían:

@@ -62,7 +62,7 @@ La suma se realiza uniendo el valor de 2 o más numeros (+)
 
 ```python
 #Aqui se debe ingresar valor a los numeros por consola
- num1int(input("ingrese un numero:"))
+ num1=int(input("ingrese un numero:"))
  num2=int(input("ingrese un numero:"))
  sum1=num1+num2
  print(num1,'-',num2,'=',sum1)
@@ -80,13 +80,14 @@ print(num1,'-',num2,'=',resta)
 
 ```python
 #Aqui se debe ingresar valor a los numeros por consola
-num1int(input("ingrese un numero:"))
+num1=int(input("ingrese un numero:"))
 num2=int(input("ingrese un numero:"))
 resta=num1-num2
 print(num1,'-',num2,'=',resta)
 ```
 
 ### Multiplicación
+Operación aritmética que consiste en calcular el resultado (producto) de sumar un mismo número (multiplicando) tantas veces como indica otro número (multiplicador); se representa con los signos · o ×.
 ```python
 #Aqui ya se le asigna valor a las variables
 num1=10
@@ -104,6 +105,7 @@ print(num1,'*',num2,'=',mult)
 ```
 
 ### División
+La división es aquella operación matemática mediante la cual se trata de descomponer un número,en tantas partes como así lo indique otro número
 ```python
 #Aqui ya se le asigna valor a las variables
 num1=10
@@ -121,6 +123,7 @@ print(num1,'/',num2,'=',divi)
 ```
 
 ### Módulo
+El operador módulo da como resultado el resto de la división entera
 ```python
 #Aqui ya se le asigna valor a las variables
 num1=10
@@ -154,31 +157,33 @@ Los tipos de datos serían:
 ```
 
 ## Integer
+int= un numero entero como 21,7,8, etc. Ademas en este caso ya les asigne valor a la varibale dia
 ```python
-dia="lunes"
-print(type(dia))
+dia=21
+print(type(dia)) #imprimirá que tipo de dato es.
 ```
 
 ## Float
+float= un numero decimal como 21.5;15.6;8.5, etc. Ya aqui le asigne valor
 ```python
-dia=21
-print(type(dia))
+dia=21.5
+print(type(dia)) #imprimirá que tipo de dato es.
 ```
 
 ## String
+string= Caracteres
 ```python
-dia=21.5
-print(type(dia))
+dia="lunes"
+print(type(dia)) #imprimirá que tipo de dato es.
 ```
+
 
 ## List
 Una lista es una estructura de datos en Python que es una secuencia de elementos ordenados mutables o cambiables. Cada elemento o valor que está dentro de una lista se denomina elemento. Así como las cadenas se definen como caracteres entre comillas, las listas se definen con valores entre corchetes [ ]
 ```python
-list_1 = [ 1,6,9]
-print(list_1)
+list = [ 1,6,9,["uno",seis","nueve"]]
+print(list)
 
-list_2 = [ 5,6]
-print(list_2)
 ```
 
 ## Tuple
@@ -191,18 +196,21 @@ Una tupla es una colección de objetos de Python separados por comas. De alguna 
 ```
 
 ## Dictionary
-Palabras reservadas
+Un Diccionario es una estructura de datos y un tipo de dato en Python con características especiales que nos permite almacenar cualquier tipo de valor como enteros, cadenas, listas e incluso otras funciones. Estos diccionarios nos permiten además identificar cada elemento por una clave (Key).
 ```python
- and assert break class continue def del elif
-else except exec finally for from global if
-import in input is lambda next not or pass
-print raise return try while yield 
+d= {'clave1': [1,2,3]
+    'clave2': true
+}
+printd[]
+
 ```
+
 # Tomando decisiones
 * Las palabras vlave if,elif,else permieten dirigir el camino por el que va a avanzar el programa dependiendo de una o varias condiciones
 - Luego de los dos puntos(:), dejamos 4 espacios de sangria en la siguiente linea o una tabulación
 
 ## Sentencia if
+es una forma común de controlar el flujo de un programa, lo que te permite ejecutar bloques de código específicos según el valor de algunos datos. Si la condición que sigue a la palabra clave if se evalúa como verdadera, el bloque de código se ejecutará.
 ```python
 #Escribir un programa que solicite un valor entero al usuario
 #determine si es par o impar
@@ -218,6 +226,7 @@ else:
 
 
 ## Ciclo For
+El bucle for se utiliza para recorrer los elementos de un objeto iterable (lista, tupla, conjunto, diccionario, …) y ejecutar un bloque de código. En cada paso de la iteración se tiene en cuenta a un único elemento del objeto iterable, sobre el cuál se pueden aplicar una serie de operaciones.
 ```python
 # Calcular la suma y la media aritmetica de Nnumeros reales. 
 # solicitar el valor de n al usuario y cada uno de los N números reales.
@@ -233,6 +242,7 @@ print("promedio:", promedio)
 ```
 
 ## Ciclo While
+El bucle while evalúa una condición y luego ejecuta un bloque de código si la condición es verdadera. El bloque de código se ejecuta repetidamente hasta que la condición llega ser o es falsa.
 ```python
 #10-20
 
@@ -245,6 +255,7 @@ print("se fue")
 ```
 
 ## Break
+Lainstrucción break le proporciona la oportunidad de cerrar un bucle cuando se activa una condición externa.
 ```python
 j=0
 for i in range (10):
@@ -255,6 +266,7 @@ for i in range (10):
 ```
 
 ## Continue
+La instrucción continue da la opción de omitir la parte de un bucle en la que se activa una condición externa, pero continuar para completar el resto del bucle. 
 ```python
 contador=0
 for i in range (10):
